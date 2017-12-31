@@ -1,2 +1,2 @@
-# homebrew-ember-spark
-Ember Spark Software formulae for the Homebrew package manager
+# Homebrew Ember Spark
+Ember Spark Software formulae for the Homebrew package manager.
