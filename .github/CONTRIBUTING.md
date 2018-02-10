@@ -6,10 +6,14 @@
 2. Request to cut a release (using semver versioning).
 3. Edit the formula (qdart.rb) to point to the new release with an updated SHA256.
     - Example:
+```bash
+curl -L https://github.com/jtromo/qdart/archive/1.1.1.tar.gz | shasum -a 256 $1
 ```
-    curl -L https://github.com/jtromo/qdart/archive/1.1.1.tar.gz | shasum -a 256 $1
+4. Test formula changes:
+```bash
+cd Formula
+brew upgrade --interactive qdart.rb
 ```
-4. Test formula changes: ```brew upgrade --interactive qdart.rb```.
 5. Submit a pull request with the updated formula.
 
 #### Creating a Pull Request
