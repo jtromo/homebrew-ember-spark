@@ -1,8 +1,8 @@
 class Qdart < Formula
   desc "Quick Dart provides commands to make life using dart and pub easier"
   homepage "https://github.com/jtromo/qdart"
-  url "https://github.com/jtromo/qdart/archive/1.1.1.tar.gz"
-  sha256 "26ad79173d80deda74500c52091545dbaedf5de989a22138de89c2640d53b10a"
+  url "https://github.com/jtromo/qdart/archive/1.2.0.tar.gz"
+  sha256 "b7a3fb2be789e62fb4cb864d9aa4e54b7018f31387fc042a542f39f6cdbf2eea"
 
   bottle :unneeded
 
