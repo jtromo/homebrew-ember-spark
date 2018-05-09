@@ -3,18 +3,19 @@
 ### Steps
 
 1. Submit a pull request to the formula's project (https://github.com/jtromo/qdart).
-2. Request to cut a release (using semantic versioning).
-3. Edit the formula (qdart.rb) to point to the new release with an updated SHA256.
+2. Request to cut a release (using semantic versioning) on the formula.
+3. Get the new SHA256 from the formula's new release.
     - Example:
 ```bash
-curl -L https://github.com/jtromo/qdart/archive/1.1.1.tar.gz | shasum -a 256 $1
+curl -L https://github.com/jtromo/qdart/archive/1.4.0.tar.gz | shasum -a 256 $1
 ```
-4. Test formula changes:
+4. Edit the formula (qdart.rb) with the updated release url and SHA256 (from the previous step).
+5. Test formula changes:
+    - Example:
 ```bash
-cd Formula
-brew upgrade --interactive qdart.rb
+(cd Formula && brew upgrade --interactive qdart.rb)
 ```
-5. Submit a pull request with the updated formula.
+6. Submit a pull request with the updated formula.
 
 #### Creating a Pull Request
 
