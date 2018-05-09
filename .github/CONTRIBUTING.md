@@ -3,7 +3,7 @@
 ### Steps
 
 1. Submit a pull request to the formula's project (https://github.com/jtromo/qdart).
-2. Request to cut a release (using semver versioning).
+2. Request to cut a release (using semantic versioning).
 3. Edit the formula (qdart.rb) to point to the new release with an updated SHA256.
     - Example:
 ```bash
@@ -21,6 +21,6 @@ brew upgrade --interactive qdart.rb
 - When making a pull request, use the provided pull request template.
 - Commit messages should begin with a prefix of the branch name.
 - The work in the pr should align with the title.  
-- Any updates to the pr that would alter the description require the description to be updated and a comment left for reviewers to make them aware.
-- Acceptance Criteria is just as important as a Description or Solution.  AC should be on every pr and in a behavior driven development format when reasonable.
+- Any updates to the pull request that would alter the description require the description to be updated and a comment left for reviewers to make them aware.
+- Acceptance Criteria is just as important as a Description or Solution.  It should be on every pull request and in a behavior driven development format when reasonable.
 - Adding test instructions and noting possible areas of regression encourages a smooth review process.
