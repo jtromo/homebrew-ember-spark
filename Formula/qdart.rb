@@ -6,7 +6,7 @@ class Qdart < Formula
 
   bottle :unneeded
 
-  depends_on "dart"
+  depends_on "dart-lang/dart"
 
   def install
     bin.install "qdart"
